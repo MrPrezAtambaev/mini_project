@@ -1,0 +1,131 @@
+.stylistics_knopkam {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 18px;
+  height: 62px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  text-shadow: 0 1px 0 #312c2c;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.stylistics_knopkam:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.stylistics_knopkam:focus {
+  outline: none;
+}
+
+.stylistics_knopkam.maiden-1 {
+  background-image: linear-gradient(
+    to right,
+    #1a92c3,
+    #2bd885,
+    #1dce79,
+    #27d07f
+  );
+  box-shadow: 0 4px 15px 0 rgba(34, 189, 183, 0.75);
+}
+.stylistics_knopkam.maiden-2 {
+  background-image: linear-gradient(
+    to right,
+    #ecc24d,
+    #e44010,
+    #f3628c,
+    #e45311
+  );
+  box-shadow: 0 4px 15px 0 rgba(224, 79, 29, 0.75);
+}
+.stylistics_knopkam.maiden-3 {
+  background-image: linear-gradient(
+    to right,
+    #5a70d4,
+    #834fb9,
+    #5a80d2,
+    #892ad8
+  );
+  box-shadow: 0 4px 15px 0 rgba(136, 92, 197, 0.75);
+}
+.stylistics_knopkam.maiden-4 {
+  background-image: linear-gradient(
+    to right,
+    #ef4a61,
+    #e48a3d,
+    #ec912d,
+    #de561b
+  );
+  box-shadow: 0 4px 15px 0 rgba(243, 120, 125, 0.75);
+}
+.stylistics_knopkam.maiden-5 {
+  background-image: linear-gradient(
+    to right,
+    #0f945a,
+    #36c598,
+    #27d883,
+    #21b76f
+  );
+  box-shadow: 0 4px 15px 0 rgba(18, 167, 105, 0.75);
+}
+.stylistics_knopkam.maiden-6 {
+  background-image: linear-gradient(
+    to right,
+    #16a95b,
+    #b1a71e,
+    #139ab1,
+    #cdd412
+  );
+  box-shadow: 0 4px 15px 0 rgba(88, 214, 52, 0.75);
+}
+.stylistics_knopkam.maiden-7 {
+  background-image: linear-gradient(
+    to right,
+    #5545d6,
+    #7f228c,
+    #908df5,
+    #e43d3c
+  );
+  box-shadow: 0 4px 15px 0 rgba(123, 45, 160, 0.75);
+}
+.stylistics_knopkam.maiden-8 {
+  background-image: linear-gradient(
+    to right,
+    #364a61,
+    #4279b5,
+    #54a3d8,
+    #7663b9
+  );
+  box-shadow: 0 4px 15px 0 rgba(72, 83, 97, 0.75);
+}
+.stylistics_knopkam.maiden-9 {
+  background-image: linear-gradient(
+    to right,
+    #169ed6,
+    #3479f1,
+    #1fbdf3,
+    #4f8de6
+  );
+  box-shadow: 0 4px 15px 0 rgba(52, 120, 222, 0.75);
+}
+.stylistics_knopkam.maiden-10 {
+  background-image: linear-gradient(
+    to right,
+    #c55983,
+    #cc704e,
+    #ea2e74,
+    #c1811c
+  );
+  box-shadow: 0 4px 15px 0 rgba(228, 97, 133, 0.75);
+}
