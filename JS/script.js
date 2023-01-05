@@ -317,6 +317,7 @@ function addComment() {
     postObj.comments = [commentObj];
   }
   console.log(posts);
+  readPost();
 }
 //comments scripts end
 
@@ -334,13 +335,12 @@ function deleteComment() {
   }
   post.comments = post.comments.filter((item) => item.id == !commentId);
   console.log(posts);
+  readPost();
   return; //posts;
 }
 
 // 2. Реализовать логику добавления лайков, любой пользователь может поставить лайк любому посту, если один и тот же пользователь ставит лайк одному и тому же посту, то необходимо отнять один лайк у объекта поста(использовать функции)
 
-let flagLike = false;
-let flagDisl = false;
 function addLike() {
   if (!inSystem) {
     alert("Only authorized users can like!");
@@ -349,14 +349,16 @@ function addLike() {
   let likeId = +prompt("Enter post ID to like");
   let postLike = posts.find((item) => item.id === likeId);
 
-  if (postLike && flagLike === false) {
-    postLike.likes += 1;
-    postLike.nameLikes = inSystem;
-    flagLike = true;
-  } else if (postLike && flagLike === true) {
+  if(postLike.nameLikes?.includes(inSystem)) {
+    postLike.nameLikes.splice(postLike.nameLikes.indexOf(inSystem), 1);
     postLike.likes -= 1;
-    flagDisl = true;
-    flagLike = false;
+    readPost();
+    return;
+  }
+
+  if(postLike) {
+    postLike.likes += 1;
+    postLike.nameLikes ? postLike.nameLikes.push(inSystem) : postLike.nameLikes = [inSystem];
   }
   console.log(posts);
   readPost();
